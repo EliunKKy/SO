@@ -29,10 +29,10 @@ int main(int argc, char *argv[])
         errno = 0;
         fp = fopen(argv[i], "r");
         if( fp == NULL )
-        {
-            perror ("Error opening file!");
-            return EXIT_FAILURE;
-        }
+    {
+        perror ("Error opening file!");
+        return EXIT_FAILURE;
+    }
 
         if ( i != argc)
         {
