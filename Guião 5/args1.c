@@ -5,6 +5,12 @@ int main(int argc, char *argv[])
 {
     int i;
 
+    if (argc != 2)
+    {   
+        printf("Warning! Invalid number of arguments \n");
+        return EXIT_FAILURE;
+    }
+
     for(i = 0 ; i < argc ; i++)
     {
         printf("Argument %02d: \"%s\"\n", i, argv[i]);        

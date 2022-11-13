@@ -3,3 +3,11 @@ echo 'O meu editor por omissão BASH $BASH \$BASH'
 echo $(( 5 + 5 ))
 (( 5 > 0 )) && echo "cinco é maior do que zero"
 today=$(date); echo $today 
+list=$(ls -1d /etc/a*);  
+for item in $list; do
+    echo $item
+done
+
+
+
+
