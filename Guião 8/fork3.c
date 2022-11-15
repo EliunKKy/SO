@@ -11,11 +11,15 @@ int main(int argc, char *argv[])
                perror("Erro no fork\n");
                return EXIT_FAILURE;
       case 0:  /* processo filho */
-               if (execl("./child", "./child", NULL) < 0) { 
+                if (execl("/bin/ls", "ls -l", NULL) < 0) { 
                    perror("erro no lancamento da aplicacao");
                    return EXIT_FAILURE;
                }
-               printf("Porque é que eu não apareço?\n");
+               /*if (execl("./child", "./child", NULL) < 0) { 
+                   perror("erro no lancamento da aplicacao");
+                   return EXIT_FAILURE;
+               } */
+               /* printf("Porque é que eu não apareço?\n"); // nunca executado - redundante */
                break;
       default: /* processo pai */
                sleep(1);
