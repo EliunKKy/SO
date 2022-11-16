@@ -8,7 +8,11 @@ int main(int argc, char *argv[])
     unsigned int i;
 
     printf("PID = %u\n", getpid());
+    //printf("Cronómetro: ");
+    //scanf("%u", &i);
+    
     i = 0;
+    
     while (i <= 10) { 
         printf("\r%08u ", i++);
         fflush(stdout);
