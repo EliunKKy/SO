@@ -8,7 +8,7 @@ int main(int argc, char **argv)
     char *username;
 
     // No terminal: export USER=NEWUSER
-    //correr programa a seguir
+    // correr programa a seguir
     // para remover: unset USER
     
     username = getenv("USER");
